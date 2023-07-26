@@ -1,0 +1,4 @@
+objectives: 
+-work on the second lesson, living in the present
+-create some navigation arrows on the left and right to navigate between lessons
+-learn how to only have a play button in the table, takes up a lot less space (custom element if required)

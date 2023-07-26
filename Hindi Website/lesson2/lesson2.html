@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <title>Living in the Present</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+* {
+	font-size: x-large; 
+}
+body {
+	background-color: lightcyan;
+}
+table {
+	margin: auto;
+	width: 50%;
+}
+table,th,td {
+	border: 1px solid black;
+}
+th,td {
+	text-align: center;
+}
+h1 {
+	font-size: xx-large;
+}
+h2 {
+	font-size: x-large;
+}
+h1,h2,p {
+	margin: 0px 100px;
+}
+p {
+	text-align: justify;
+}
+.left-rectangle{
+	width: 90px;
+	height: 98%;
+	background-color: pink;
+	position: fixed;
+	left: 10px;
+}
+.right-rectangle{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 90px;
+	height: 98%;
+	background-color: pink;
+}
+.left-triangle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid purple;
+	border-bottom: 25px solid transparent;
+}
+.right-triangle{
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid purple;
+	border-bottom: 25px solid transparent;
+}
+.caution-box {
+	background-color: yellow;
+}
+/* Trying to create a tooltip when you hover over the info button.
+Most common use case for relative tag is when child wants to use absolute tag. 
+Why is the top attribute not rendering properly, acting as if it was an absolute element? 
+Look closer at the document structure. */
+.info-icon-1 {
+	position: relative;
+}
+.info-icon-1 .info-popup-1 {
+	visibility: hidden;
+	width: 1000%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	border-radius: 20px;
+	
+	position: absolute;
+	z-index: 1;
+	top: -450%;
+	right: -450%;
+}
+.info-icon-1:hover .info-popup-1 {
+	visibility: visible;
+}
+caption {
+	font-size: medium;
+}
+</style>
+<body>
+	<div class="left-rectangle">
+		<div class="left-triangle" onclick="window.location.href='../lesson1/swar-vyanjan.html'"></div>
+	</div>
+	<h1>Present Tense</h1>
+	<p>There's no time like the present. In order to live in the present moment while speaking in Hindi, we will first 
+have to learn about the infinitive form of some common words we use in Hindi. The infinitive form of a verb is the most 
+basic form of the verb that isn't altered by any tenses (e.g. past, present, or future). In Hindi, the infinitive form
+of a verb contains the verb stem appended by "na". After viewing the infinitive form of a few basic verbs in Hindi, we
+will go over the present tense in all of its forms for those same words. Let's start with the words eat, sleep, and
+drink, since those are some of the most basic things you need to do to survive.</p>
+	<br />
+	<p>But before that, we must go into something even more fundamental. We must go into all the conjugations of the
+word "honaa" which means "to be" or "to exist" in Hindi. <i>After all, there is nothing more fundamental than existence
+itself.</i> If you're wondering what conjugations are, they just tell us how words interact with certain pronouns. A 
+couple of examples in English would include "I am", "you are", "we are", "they are", and so on. Examples are listed 
+in the conjugation table below.</p>
+	<br />
+	<!-- Weird note: "ham" actually sounds like "hum." -->
+	<!-- "Ya" means "or" in Hindi. -->
+	<!-- There is also no way to tell the difference between "he" and "she" in Hindi if you take a sentence in 
+	isolation, so you will have to use context clues. -->
+	<!-- How do you have a caution box (exclamation point), hover over it and you see text -->
+	<!-- Create a tooltip for some of these conjugations. -->
+	<h2 id="conjugation-heading">Conjugation Table</h2>
+	<table id="conjugation-table">
+		<caption style="caption-side:bottom">Notice that there are straight lines at the end of each sentence shown
+		below. They are called "dandas."</caption>
+		<tr>
+			<td>I am.</td>
+			<td>Main hoon.</td>
+			<td>&#2350;&#2376;&#2305;&nbsp;&#2361;&#2369;&#2305;&#2404;</td><!-- Info box about the danda. -->
+			<td>We are.</td>
+			<td>Ham hain.</td>
+			<td>&#2361;&#2350;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+		<tr class="caution-row">
+			<td class="caution-box">You are.</td>
+			<td class="caution-box">Tu hai.</td>
+			<td class="caution-box">&#2340;&#2369;&nbsp;&#2361;&#2376;&#2404;&nbsp;
+			<span class="info-icon-1">&#9432;
+				<span class="info-popup-1">The "tu" form should not be used in daily conversation with those you aren't close with.</span>
+			</span>
+			</td>
+			<td>You are.</td>
+			<td>Tum ho.</td>
+			<td>&#2340;&#2369;&#2350;&nbsp;&#2361;&#2379;&#2404;</td>
+		</tr>
+		<tr>
+			<td>He/she is.</td>
+			<td>Vah/yah hai.</td><!-- Put another caution box here, pronunciation. Also do another audio box. -->
+			<td>&#2357;&#2361;/&#2351;&#2361;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>They are.</td>
+			<td>Ve/ye hain.</td>
+			<td>&#2357;&#2375;/&#2351;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+	</table>
+	<br />
+	<h1>To Function in Life</h1>
+	<!-- How do you make sure the lines don't overflow? --> 
+	<h2>To Eat - Khaana</h2>
+	<table>
+		<tr>
+			<td>I eat.</td>
+			<td>Main khaata hoon.</td>
+			<td>&#2350;&#2376;&#2305;&nbsp;&#2326;&#2366;&#2340;&#2366;&nbsp;&#2361;&#2369;&#2305;&#2404;</td>
+			<td>We eat.</td>
+			<td>Ham khaate hain.</td>
+			<td>&#2361;&#2350;&nbsp;&#2326;&#2366;&#2340;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+		<tr>
+			<td>You eat.</td>
+			<td>Tu khaata hai.</td>
+			<td>&#2340;&#2369;&nbsp;&#2326;&#2366;&#2340;&#2366;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>You eat.</td>
+			<td>Tum khaate ho.</td>
+			<td>&#2340;&#2369;&#2350;&nbsp;&#2326;&#2366;&#2340;&#2375;&nbsp;&#2361;&#2379;&#2404;</td>
+		</tr>
+		<tr>
+			<td>He/she eats.</td>
+			<td>Vah/yah khaata hai.</td>
+			<td>&#2357;&#2361;/&#2351;&#2361;&nbsp;&#2326;&#2366;&#2340;&#2366;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>They eat.</td>
+			<td>Ve/ye khaate hain.</td>
+			<td>&#2357;&#2375;/&#2351;&#2375;&nbsp;&#2326;&#2366;&#2340;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+	</table>
+	<h2>To Drink - Pinaa</h2>
+	<table>
+		<tr>
+			<td>I drink.</td>
+			<td>Main pita hoon.</td>
+			<td>&#2350;&#2376;&#2305;&nbsp;&#2346;&#2368;&#2340;&#2366;&nbsp;&#2361;&#2369;&#2305;&#2404;</td>
+			<td>We drink.</td>
+			<td>Ham pite hain.</td>
+			<td>&#2361;&#2350;&nbsp;&#2346;&#2368;&#2340;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+		<tr>
+			<td>You drink.</td>
+			<td>Tu pita hai.</td>
+			<td>&#2340;&#2369;&nbsp;&#2346;&#2368;&#2340;&#2366;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>You eat.</td>
+			<td>Tum pite ho.</td>
+			<td>&#2340;&#2369;&#2350;&nbsp;&#2346;&#2368;&#2340;&#2375;&nbsp;&#2361;&#2379;&#2404;</td>
+		</tr>
+		<tr>
+			<td>He/she eats.</td>
+			<td>Vah/yah pita hai.</td>
+			<td>&#2357;&#2361;/&#2351;&#2361;&nbsp;&#2346;&#2368;&#2340;&#2366;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>They eat.</td>
+			<td>Ve/ye pite hain.</td>
+			<td>&#2357;&#2375;/&#2351;&#2375;&nbsp;&#2346;&#2368;&#2340;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+	</table>
+	<h2>To Sleep - Sonaa</h2>
+	<!-- Common words we will use: eat, sleep, drink - the things we need to do to survive. -->
+	<!-- Examples: "I eat", "you eat" (informal, intimate), "you eat" (friendly), "we eat",
+	"he/she eats" (no difference between the genders, context clues), "they eat" --> 
+	<!-- Discuss the irregular verbs as well -->
+	<!-- Here's a good idea for a lesson title for possessives like "meri" ... "Taking Ownership" like Jocko. -->
+	<!-- Leaving s comments section would also be a great idea. -->
+	<!-- Think about the difference between transitive and intransitive verbs as well. -->
+	<table>
+		<tr>
+			<td>I sleep.</td>
+			<td>Main sota hoon.</td>
+			<td>&#2350;&#2376;&#2305;&nbsp;&#2360;&#2379;&#2340;&#2366;&nbsp;&#2361;&#2369;&#2305;&#2404;</td>
+			<td>We sleep.</td>
+			<td>Ham sote hain.</td>
+			<td>&#2361;&#2350;&nbsp;&#2360;&#2379;&#2340;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+		<tr>
+			<td>You sleep.</td>
+			<td>Tu sota hai.</td>
+			<td>&#2340;&#2369;&nbsp;&#2360;&#2379;&#2340;&#2366;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>You sleep.</td>
+			<td>Tum sote ho.</td>
+			<td>&#2340;&#2369;&#2350;&nbsp;&#2360;&#2379;&#2340;&#2375;&nbsp;&#2361;&#2379;&#2404;</td>
+		</tr>
+		<tr>
+			<td>He/she sleep.</td>
+			<td>Vah/yah sota hai.</td>
+			<td>&#2357;&#2361;/&#2351;&#2361;&nbsp;&#2360;&#2379;&#2340;&#2366;&nbsp;&#2361;&#2376;&#2404;</td>
+			<td>They sleep.</td>
+			<td>Ve/ye sote hain.</td>
+			<td>&#2357;&#2375;/&#2351;&#2375;&nbsp;&#2360;&#2379;&#2340;&#2375;&nbsp;&#2361;&#2376;&#2306;&#2404;</td>
+		</tr>
+	</table>
+	<br />
+	<p>Now that you're getting the hang of it, I will have a table of 24 <i>(the magic number)</i> other verbs for 
+	you to study. They will be featured in the up-and-coming quiz, whenever you're ready. Take your time studying 
+	these words.</p>
+	<br />
+	<table id="table-of-words">
+		<tr>
+			<th>English</th>
+			<th>Hindi (transliteration)</th>
+			<th>Hindi (Devanagari)</th>
+		</tr>
+		<tr>
+			<!-- have is used with "paas" -->
+			<td>keep</td>
+			<td>rakhna</td>
+			<td>&#2352;&#2326;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>do</td>
+			<td>karna</td>
+			<td>&#2325;&#2352;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<!-- information icon: this word also means "tell" -->
+			<td>say</td>
+			<td>kahana</td>
+			<td>&#2325;&#2361;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<!-- information icon: this word also means "find" -->
+			<td>get</td>
+			<td>paana</td>
+			<td>&#2346;&#2366;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>make</td>
+			<td>banana</td>
+			<!-- put a banana here for comedic effect -->
+			<!-- maybe make some kind of animation -->
+			<td>&#2348;&#2344;&#2366;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>go</td>
+			<td>jaana</td>
+			<td>&#2332;&#2366;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>know</td>
+			<td>jaanana</td>
+			<!-- have a tooltip here, "don't get confused" or something like that -->
+			<td>&#2332;&#2366;&#2344;&#2366;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>take</td>
+			<td>lena</td>
+			<td>&#2354;&#2375;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>see</td>
+			<td>dekhna</td>
+			<td>&#2342;&#2375;&#2326;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>come</td>
+			<td>aana</td>
+			<td>&#2310;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>think</td>
+			<td>sochna</td>
+			<td>&#2360;&#2379;&#2330;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<!-- another construction: "mujhe ... chahiye" -->
+			<td>want</td>
+			<td>chaahana</td>
+			<td>&#2330;&#2366;&#2361;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<td>give</td>
+			<td>dena</td>
+			<td>&#2342;&#2375;&#2344;&#2366;</td>
+		</tr>
+		<!-- use is "upayog", figure out how to use the word "use" in Hindi -->
+		<tr>
+			<td>ask</td>
+			<td>poochna</td>
+			<td>&#2346;&#2370;&#2331;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<!-- information icon: called a "compound verb" of some sort? -->
+			<td>work</td>
+			<td>kam karna</td>
+			<td>&#2325;&#2350;&nbsp;&#2325;&#2352;&#2344;&#2366;</td>
+		</tr>
+		<tr>
+			<!-- information icon: there's an inherent vowel for each word -->
+			<td>seem</td>
+			<td>prateet hona</td>
+			<td>&#2346;&#2381;&#2352;&#2340;&#2368;&#2340;&nbsp;&#2361;&#2379;&#2344;&#2366;</td>
+		</tr>
+		<!--
+		<tr>
+			<td>work</td>
+			<td>seem</td>
+			<td>feel</td>
+			<td>try</td>
+			<td>leave</td>
+			<td>call</td>
+		</tr>
+		-->
+	<table>
+	<div class="flashcards"></div>
+	<div class="right-rectangle">
+		<div class="right-triangle"></div>
+	</div>
+</body> 
