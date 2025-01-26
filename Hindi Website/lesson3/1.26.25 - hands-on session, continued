@@ -1,0 +1,19 @@
+short website session: make a header that doesn't scroll instead of the one that takes up the whole 
+	screen, since that's pretty ugly (have it formatted similarly to the Wayback Machine)
+if you want comments within the style tag, probably best to use the /* */ format
+link the second page to the third one we have created, first one is already linked
+when you're pushing your commits to the repository, you can now use (only after creating the remote origin):
+git push origin main
+in order to center some text within an element, use:
+text-align: center;
+can't wait to learn about flexbox, one of the CSS units on the Odin Project
+possible ways of keeping a static heading, as per StackOverflow: using frame-sets and iframes, but they're not user-friendly enough?
+consider position: sticky; which seems like it's one of the more updated versions, as of 2021
+the old-fashioned solution is something like: 
+#header {
+	position: fixed;
+}
+#content {
+	margin-top: 100px;
+}
+another possibility: learn how to make flashcards with transitions
